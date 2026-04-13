@@ -519,8 +519,7 @@ with tab5:
     st.markdown(
     """
     <div style='
-        width: fit-content;
-        background-color:'light red'; 
+        width: fit-content; 
         padding:12px 16px; 
         border-radius:8px;
         margin-left:auto;
