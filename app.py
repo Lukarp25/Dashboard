@@ -18,7 +18,7 @@ def load_data():
     df['%_to_NAV'] = pd.to_numeric(df['%_to_NAV'])
 
     amc_list = ['ABSL', 'AXIS', 'BANDHAN', 'BNP PARIBAS', 'BOI', 'DSP','EDELWEISS','HSBC','JM','ICICI', 'ITI', 'LIC', 'MIRAE ASSET',
-                'MOTILAL', 'NIPPON', 'SUNDARAM']
+                'MOTILAL', 'NIPPON', 'SUNDARAM','WHITEOAK']
                 
     df['%_to_NAV'] = df.apply(
         lambda row: row['%_to_NAV'] * 100 if row['AMC'] in amc_list else row['%_to_NAV'],
