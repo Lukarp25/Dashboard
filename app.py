@@ -33,7 +33,7 @@ button[aria-selected="true"] {
 # -------------------- Load Data --------------------
 @st.cache_data
 def load_data():
-    df = pd.read_excel("output/MIDCAP_master_holdings.xlsx")
+    df = pd.read_excel("MIDCAP_master_holdings.xlsx")
     df.columns = df.columns.str.strip()
 
     df["Share Name"] = df["Share Name"].astype(str)
